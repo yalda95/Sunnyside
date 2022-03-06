@@ -1,0 +1,86 @@
+/* ------------------*/
+/* Custom Properties */
+/* ----------------- */
+
+:root {
+    --clr-primary-background-white: hsl(0, 0%, 100%);
+    --clr-secondary-background-sunnyside:hsl(168, 44%, 56%);
+    --clr-primary-text-black:hsl(0, 0%, 0%);
+    --clr-secondary-text-dark-gray:hsl(0, 0%, 30%);
+    --clr-secondary-text-light-gray:hsl(0, 0%, 50%);
+    --clr-secondary-text-white:hsl(0, 0%, 93%);
+    --clr-secondary-text-sunnyside:hsl(168, 45%, 32%);
+
+    /* font size */
+   
+    --fs-300:1rem;
+    --fs-400:2rem;
+    --fs-600:3rem;
+    --fs-800:5.25rem;
+
+    /* font families */
+
+    --ff-san-serif:'Lato', sans-serif;
+}
+
+/* Box sizing and presets*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: var(--ff-san-serif);
+}
+nav {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+li {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* ----------------- */
+/*  Utility classes */
+/* ----------------- */
+
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+
+/* colors */
+
+.bg-white { background-color: var(--clr-primary-background-white);}
+.bg-sunnyside { background-color: var(--clr-secondary-background-sunnyside);}
+.text-black {color: var(--clr-primary-text-black);}
+.text-dark-gray { color: var(--clr-secondary-text-dark-gray);}
+.text-light-gray { color: var(--clr-secondary-text-light-gray);}
+.text-white { color: var(--clr-secondary-text-white);}
+.text-sunnyside { color: var(--clr-secondary-text-sunnyside);}
+/* Typography */
+
+.fs-300 {font-size: var(--fs-300);}
+.fs-400 {font-size: var(--fs-400);}
+.fs-600 {font-size: var(--fs-600);}
+.fs-800 {font-size: var(--fs-800);}
+

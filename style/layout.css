@@ -1,0 +1,250 @@
+header {
+    max-width: 90rem;
+    margin: 0 auto;
+    background: #3FC1FF;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+nav {
+    width: 15rem;
+    height: 16rem;
+    z-index: 200;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    display: none;
+    background: white;
+}
+.block {
+    display: block;
+}
+nav ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin:0 ;
+    height: inherit;
+}
+nav ul li {
+    padding: 0.8rem 1.2rem;
+    border-radius: 1rem;
+}
+
+.hero {
+    max-width: 90rem;
+    margin: 0 auto;
+    position: relative;
+}
+.hero-text {
+    width: 100%;
+    position: absolute;
+    top:30%;
+    animation: myAnim1 2s ease 0s 1 normal none;
+}
+@keyframes myAnim1 {
+    0% {
+      opacity: 0;
+      transform: translateY(-250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.hero-text * {
+    letter-spacing: 0.3rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+.middle-section {
+    max-width: 90rem;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.middle-section_one {
+    animation: myAnim2 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim2 {
+    0% {
+      opacity: 0;
+      transform: translateX(-250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+.middle-section_two {
+    animation: myAnim3 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim3 {
+    0% {
+      opacity: 0;
+      transform: translateX(250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.text-area {
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem;
+    margin: 0 auto;
+}
+.text-area p {
+    width: 80%;
+    margin: 0 auto;
+}
+.middle-section_features {
+    position: relative;
+}
+
+.text {
+    text-align: center;
+    width: 20rem;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-left: -10rem;
+}
+.testimonial-title {
+   text-align: center;
+   padding: 5rem;
+   letter-spacing: 0.3rem;
+}
+
+.testimonials h2 {
+    text-align: center;
+}
+.testimonials-item {
+    text-align: center;
+    margin: 5rem 0;
+    padding: 0 2rem;
+}
+.testimonials-item div {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 8rem;
+    margin: 0 auto;
+}
+.testimonials-item div img {
+    border-radius: 8rem;
+    cursor: pointer;
+}
+footer {
+    max-width: 90rem;
+    height: 21.8rem;
+    margin: 0 auto;
+}
+.footer-logo img {
+    padding-top: 2rem;
+    margin: 0 auto;
+}
+.footer-nav {
+    width: 80%;
+    margin: 5rem auto;
+}
+
+footer ul  {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+}
+.footer-nav ul li:hover {
+    color: var(--clr-secondary-text-white);
+}
+.learn-more {
+    width: 10rem;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+.learn-more:hover {
+    border-bottom: 3px solid orange;
+}
+.reveal{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+@media (min-width:720px) {
+    #hamburger-menu {
+        display: none;
+    }
+    nav {
+        display: block;
+        width: 30rem;
+        height: 4rem;
+        z-index: 200;
+        background: #3FC1FF;
+        position: static;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        margin:0 ;
+        z-index: 200;
+    }
+    nav ul li:hover {
+        background: hsl(0, 0%, 93%,0.3);
+        transition: 0.4s;
+    }
+    .hero-text h1 {
+        font-size: clamp(3rem,7vw,5.25rem)
+    }
+    .middle-section {
+        min-width: 60.6rem;
+        flex-direction: row;
+        justify-content: space-between;
+        height: max-content;
+        
+    }
+
+    .reverse {
+        
+        flex-direction: row-reverse;
+    }
+    .text-area {
+        max-width: 50%;
+        justify-content: center;
+    }
+    .text-area h2 {
+        font-size: clamp(0.5rem,2vw, 3rem)
+    }
+    .text-area p {
+        font-size: clamp(1rem,2vw, 1.5rem)
+
+    }
+    .learn-more {
+        font-size: clamp(1rem,2vw, 1.5rem)
+
+    }
+    
+    .testimonial-title {
+        font-size: clamp(2rem,2vw, 3rem)
+
+    }
+    .footer-nav {
+        width: 30%;
+    }
+}
